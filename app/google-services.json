@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "479259272948",
+    "project_id": "busines-sim-41351",
+    "storage_bucket": "busines-sim-41351.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479259272948:android:0a8f41f1f4547a2adca0a1",
+        "android_client_info": {
+          "package_name": "com.example.businessim"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdWBv9JYKY-I1UPP99sG5tgJ-fzADYh-o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
