@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_icon"
+            android:title="Logout"/>
+        <item android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="Home"/>
+        <item android:id="@+id/nav_research"
+            android:icon="@drawable/research_icon"
+            android:title="R and D"/>
+        <item android:id="@+id/nav_finance"
+            android:icon="@drawable/finance_icon"
+            android:title="Finance"/>
+        <item android:id="@+id/nav_Marketing"
+            android:icon="@drawable/marketing_icon"
+            android:title="Marketing"/>
+        <item android:id="@+id/nav_production"
+            android:icon="@drawable/production_icon"
+            android:title="Production"/>
+
+    </group>
+</menu>

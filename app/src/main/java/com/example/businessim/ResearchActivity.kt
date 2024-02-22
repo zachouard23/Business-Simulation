@@ -3,15 +3,15 @@ package com.example.businessim
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.businessim.databinding.ActivityHomeBinding
+import com.example.businessim.databinding.ActivityResearchBinding
 
-
-class HomeActivity : DrawerBaseActivity() {
-    private lateinit var binding: ActivityHomeBinding
+class ResearchActivity : DrawerBaseActivity() {
+    private lateinit var binding: ActivityResearchBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityHomeBinding.inflate(layoutInflater)
+        binding = ActivityResearchBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        allocateActivityTitle("Home")
+        allocateActivityTitle("R&D")
     }
 }
