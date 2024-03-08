@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".ResearchActivity">
 
     <TextView
@@ -17,80 +16,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <!-- R&D Budget -->
-    <EditText
-        android:id="@+id/etRdBudget"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="RnD Budget"
-        android:inputType="numberDecimal" />
 
-    <!-- Research Focus -->
-    <EditText
-        android:id="@+id/etResearchFocus"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Research Focus" />
-
-    <!-- Project Priority -->
-    <Spinner
-        android:id="@+id/spinnerProjectPriority"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <!-- New Product Count -->
-    <EditText
-        android:id="@+id/etNewProductCount"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="New Product Count"
-        android:inputType="number" />
-
-    <!-- New Product Features -->
-    <EditText
-        android:id="@+id/etNewProductFeatures"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="New Product Features (comma-separated)" />
-
-    <!-- R&D Staff Count -->
-    <EditText
-        android:id="@+id/etRdStaffCount"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="RnD Staff Count"
-        android:inputType="number" />
-
-    <!-- R&D Equipment Budget -->
-    <EditText
-        android:id="@+id/etRdEquipmentBudget"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="RnD Equipment Budget"
-        android:inputType="numberDecimal" />
-
-
-    <!-- Competitive Analysis -->
-    <EditText
-        android:id="@+id/etCompetitiveAnalysis"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Competitive Analysis" />
-
-    <!-- Success Metrics -->
-    <EditText
-        android:id="@+id/etSuccessMetrics"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Success Metrics (comma-separated)" />
-
-    <!-- Button to submit R&D input -->
-    <Button
-        android:id="@+id/btnSubmitRnDInput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/etSuccessMetrics"
-        android:layout_centerHorizontal="true"
-        android:text="Save" />
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MarketingActivity">
 
     <TextView
@@ -17,124 +16,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <!-- Marketing Budget -->
-    <EditText
-        android:id="@+id/etMarketingBudget"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Marketing Budget"
-        android:inputType="numberDecimal" />
-
-    <!-- Marketing Channels -->
-    <EditText
-        android:id="@+id/etMarketingChannels"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Marketing Channels (comma-separated)"
-        android:inputType="text" />
-
-    <!-- Campaign Budget -->
-    <EditText
-        android:id="@+id/etCampaignBudget"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Campaign Budget"
-        android:inputType="numberDecimal" />
-
-    <!-- Campaign Duration -->
-    <EditText
-        android:id="@+id/etCampaignDuration"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Campaign Duration (in days)"
-        android:inputType="number" />
-
-    <!-- Campaign Target Audience -->
-    <EditText
-        android:id="@+id/etCampaignTargetAudience"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Campaign Target Audience"
-        android:inputType="text" />
-
-    <!-- Content Types -->
-    <EditText
-        android:id="@+id/etContentTypes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Content Types (comma-separated)"
-        android:inputType="text" />
-
-    <!-- Content Frequency -->
-    <EditText
-        android:id="@+id/etContentFrequency"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Content Frequency"
-        android:inputType="text" />
-
-    <!-- Content Distribution -->
-    <EditText
-        android:id="@+id/etContentDistribution"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Content Distribution"
-        android:inputType="text" />
-
-    <!-- Promotion Type -->
-    <EditText
-        android:id="@+id/etPromotionType"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Promotion Type"
-        android:inputType="text" />
-
-    <!-- Promotion Duration -->
-    <EditText
-        android:id="@+id/etPromotionDuration"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Promotion Duration (in days)"
-        android:inputType="number" />
-
-    <!-- Promotion Target Audience -->
-    <EditText
-        android:id="@+id/etPromotionTargetAudience"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Promotion Target Audience"
-        android:inputType="text" />
-
-    <!-- Market Segmentation -->
-    <EditText
-        android:id="@+id/etMarketSegmentation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Market Segmentation"
-        android:inputType="text" />
-
-    <!-- Competitor Analysis -->
-    <EditText
-        android:id="@+id/etCompetitorAnalysis"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Competitor Analysis"
-        android:inputType="text" />
-
-    <!-- Brand Values -->
-    <EditText
-        android:id="@+id/etBrandValues"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Brand Values (comma-separated)"
-        android:inputType="text" />
-    <Button
-        android:id="@+id/btnSubmitMarketingInput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/etBrandValues"
-        android:layout_centerHorizontal="true"
-        android:text="Save" />
-
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
