@@ -10,7 +10,7 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import android.view.MenuItem
-open class DrawerBaseActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+open class DrawerBaseActivity : AppCompatActivity() {
 
     private lateinit var drawerLayout: DrawerLayout
 
@@ -33,7 +33,7 @@ open class DrawerBaseActivity : AppCompatActivity(), NavigationView.OnNavigation
         toggle.syncState()
     }
 
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+     fun onNavigationItemSelected(item: MenuItem): Boolean {
         drawerLayout.closeDrawer(GravityCompat.START)
         when (item.itemId) {
             R.id.nav_logout -> {
@@ -47,32 +47,31 @@ open class DrawerBaseActivity : AppCompatActivity(), NavigationView.OnNavigation
                 startActivity(intent2)
                 overridePendingTransition(0, 0)
             }
-
             R.id.nav_research -> {
                 val intent3 = Intent(this, ResearchActivity::class.java)
                 startActivity(intent3)
                 overridePendingTransition(0, 0)
             }
-
             R.id.nav_finance -> {
                 val intent4 = Intent(this, FinanceActivity::class.java)
                 startActivity(intent4)
                 overridePendingTransition(0, 0)
             }
-
             R.id.nav_Marketing -> {
                 val intent5 = Intent(this, MarketingActivity::class.java)
                 startActivity(intent5)
                 overridePendingTransition(0, 0)
             }
-
             R.id.nav_production -> {
                 val intent6 = Intent(this, ProductionActivity::class.java)
                 startActivity(intent6)
                 overridePendingTransition(0, 0)
             }
         }
-        return true
+         return false
+
+            // Add more cases for other navigation items if needed
+
     }
 
     protected fun allocateActivityTitle(titleString: String) {
@@ -80,4 +79,8 @@ open class DrawerBaseActivity : AppCompatActivity(), NavigationView.OnNavigation
             supportActionBar?.title = titleString
         }
     }
+}
+
+private fun NavigationView.setNavigationItemSelectedListener(drawerBaseActivity: DrawerBaseActivity) {
+
 }
