@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".FinanceActivity">
 
     <TextView
@@ -16,4 +17,119 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Budget Allocation -->
+    <EditText
+        android:id="@+id/etBudgetAllocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Budget Allocation"
+        android:inputType="numberDecimal" />
+
+    <!-- Investment Amount -->
+    <EditText
+        android:id="@+id/etInvestmentAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Investment Amount"
+        android:inputType="numberDecimal" />
+
+    <!-- Investment Type -->
+    <EditText
+        android:id="@+id/etInvestmentType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Investment Type" />
+
+
+    <!-- Liquidity Ratio -->
+    <EditText
+        android:id="@+id/etLiquidityRatio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Liquidity Ratio"
+        android:inputType="numberDecimal" />
+
+
+    <!-- Cash Flow Forecast -->
+    <EditText
+        android:id="@+id/etCashFlowForecast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cash Flow Forecast (comma-separated)"
+        android:inputType="text" />
+
+    <!-- Cash Reserve -->
+    <EditText
+        android:id="@+id/etCashReserve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cash Reserve"
+        android:inputType="numberDecimal" />
+
+    <!-- Expense Categories -->
+    <EditText
+        android:id="@+id/etExpenseCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expense Categories (comma-separated)"
+        android:inputType="text" />
+
+    <!-- Expense Budgets -->
+    <EditText
+        android:id="@+id/etExpenseBudgets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expense Budgets (comma-separated)"
+        android:inputType="text" />
+
+    <!-- Loan Amount -->
+    <EditText
+        android:id="@+id/etLoanAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Loan Amount"
+        android:inputType="numberDecimal" />
+
+    <!-- Loan Term -->
+    <EditText
+        android:id="@+id/etLoanTerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Loan Term"
+        android:inputType="number" />
+
+    <!-- Loan Interest Rate -->
+    <EditText
+        android:id="@+id/etLoanInterestRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Loan Interest Rate"
+        android:inputType="numberDecimal" />
+
+
+    <!-- Financial Goals -->
+    <EditText
+        android:id="@+id/etFinancialGoals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Financial Goals (comma-separated)"
+        android:inputType="text" />
+
+
+    <!-- Tax Deductions -->
+    <EditText
+        android:id="@+id/etTaxDeductions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tax Deductions (comma-separated)"
+        android:inputType="text" />
+
+    <!-- Button to submit Finance input -->
+    <Button
+        android:id="@+id/btnSubmitFinanceInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etTaxDeductions"
+        android:layout_centerHorizontal="true"
+        android:text="Save" />
+</LinearLayout>
