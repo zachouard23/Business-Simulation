@@ -1,9 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".FinanceActivity">
+    <!-- Budget Allocation -->
+    <EditText
+        android:id="@+id/etBudgetAllocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Budget Allocation"
+        android:inputType="text" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Revenue Forecasting -->
+    <EditText
+        android:id="@+id/etRevenueForecasting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etBudgetAllocation"
+        android:hint="Revenue Forecasting"
+        android:inputType="text" />
+
+    <!-- Expense Management -->
+    <EditText
+        android:id="@+id/etExpenseManagement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etRevenueForecasting"
+        android:hint="Expense Management"
+        android:inputType="text" />
+
+    <!-- Cash Flow Management -->
+    <EditText
+        android:id="@+id/etCashFlowManagement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etExpenseManagement"
+        android:hint="Cash Flow Management"
+        android:inputType="text" />
+
+    <!-- Investment Analysis -->
+    <EditText
+        android:id="@+id/etInvestmentAnalysis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etCashFlowManagement"
+        android:hint="Investment Analysis"
+        android:inputType="text" />
+
+    <!-- Financial Reporting -->
+    <EditText
+        android:id="@+id/etFinancialReporting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etInvestmentAnalysis"
+        android:hint="Financial Reporting"
+        android:inputType="text" />
+
+    <!-- Risk Management -->
+    <EditText
+        android:id="@+id/etRiskManagement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etFinancialReporting"
+        android:hint="Risk Management"
+        android:inputType="text" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etRiskManagement"
+        android:layout_centerHorizontal="true"
+        android:text="Submit" />
+</LinearLayout>

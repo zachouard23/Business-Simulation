@@ -1,10 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ProductionActivity">
+  <!-- Production Capacity -->
+  <EditText
+      android:id="@+id/etProductionCapacity"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Production Capacity"
+      android:inputType="number" />
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  <!-- Inventory Level -->
+  <EditText
+      android:id="@+id/etInventoryLevel"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/etProductionCapacity"
+      android:hint="Inventory Level"
+      android:inputType="number" />
+
+  <!-- Resource Availability -->
+  <EditText
+      android:id="@+id/etResourceAvailability"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/etInventoryLevel"
+      android:hint="Resource Availability"
+      android:inputType="text" />
+
+  <!-- Production Cost per Unit -->
+  <EditText
+      android:id="@+id/etProductionCostPerUnit"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/etResourceAvailability"
+      android:hint="Production Cost per Unit"
+      android:inputType="numberDecimal" />
+
+  <!-- Quality Standards -->
+  <EditText
+      android:id="@+id/etQualityStandards"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/etProductionCostPerUnit"
+      android:hint="Quality Standards"
+      android:inputType="text" />
+
+  <!-- Submit Button -->
+  <Button
+      android:id="@+id/btnSubmit"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/etQualityStandards"
+      android:layout_centerHorizontal="true"
+      android:text="Submit" />
+  </LinearLayout>
