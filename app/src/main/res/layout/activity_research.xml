@@ -1,70 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/pear"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ResearchActivity">
-    <!-- R&D Budget -->
-    <EditText
-        android:id="@+id/etRDBudget"
+    <!-- Round number -->
+    <TextView
+        android:id="@+id/tvRound"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="RnD Budget"
+        android:background="@color/hunter_green"
+        android:hint="Round"
+        android:textColor="@color/white"
+        android:textSize="30dp"
         android:inputType="numberDecimal" />
 
-    <!-- Research Focus -->
-    <EditText
-        android:id="@+id/etResearchFocus"
+
+    <!-- products recyclerview -->
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/etRDBudget"
-        android:hint="Research Focus"
-        android:inputType="text" />
+        android:layout_below="@id/tvRound">
 
-    <!-- Team Members -->
-    <EditText
-        android:id="@+id/etTeamMembers"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/etResearchFocus"
-        android:hint="Team Members"
-        android:inputType="text" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/product_list"/>
+    </LinearLayout>
 
-    <!-- R&D Timeline -->
-    <EditText
-        android:id="@+id/etRDTimeLine"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/etTeamMembers"
-        android:hint="RnD Timeline"
-        android:inputType="text" />
-
-    <!-- Research Facilities -->
-    <EditText
-        android:id="@+id/etResearchFacilities"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/etRDTimeLine"
-        android:hint="Research Facilities"
-        android:inputType="text" />
-
-    <!-- IP Protection Strategy -->
-    <EditText
-        android:id="@+id/etIPProtectionStrategy"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/etResearchFacilities"
-        android:hint="IP Protection Strategy"
-        android:inputType="text" />
-
-    <!-- Submit Button -->
-    <Button
-        android:id="@+id/btnSubmit"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addingBtn"
+        android:src="@drawable/add_icon"
+        app:tint="@color/hunter_green"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/etIPProtectionStrategy"
-        android:layout_centerHorizontal="true"
-        android:text="Submit" />
-</LinearLayout>
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

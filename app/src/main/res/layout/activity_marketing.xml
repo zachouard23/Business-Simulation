@@ -1,61 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/pear"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MarketingActivity">
-    <!-- Target Audience -->
-    <EditText
-        android:id="@+id/etTargetAudience"
+    tools:context=".ResearchActivity">
+    <!-- Round number -->
+    <TextView
+        android:id="@+id/tvRound"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Target Audience"
-        android:inputType="text" />
+        android:background="@color/hunter_green"
+        android:hint="Round"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:inputType="numberDecimal" />
 
-    <!-- Marketing Channels -->
-    <EditText
-        android:id="@+id/etMarketingChannels"
+
+    <!-- products recyclerview -->
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/etTargetAudience"
-        android:hint="Marketing Channels"
-        android:inputType="text" />
+        android:layout_below="@id/tvRound">
 
-    <!-- Message Development -->
-    <EditText
-        android:id="@+id/etMessageDevelopment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/etMarketingChannels"
-        android:hint="Message Development"
-        android:inputType="text" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/marketRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/market_list"/>
+    </LinearLayout>
 
-    <!-- Budget Allocation -->
-    <EditText
-        android:id="@+id/etBudgetAllocation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/etMessageDevelopment"
-        android:hint="Budget Allocation"
-        android:inputType="text" />
-
-    <!-- Performance Measurement -->
-    <EditText
-        android:id="@+id/etPerformanceMeasurement"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/etBudgetAllocation"
-        android:hint="Performance Measurement"
-        android:inputType="text" />
-
-    <!-- Submit Button -->
-    <Button
-        android:id="@+id/btnSubmit"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/marketBtn"
+        android:src="@drawable/add_icon"
+        app:tint="@color/hunter_green"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/etPerformanceMeasurement"
-        android:layout_centerHorizontal="true"
-        android:text="Submit" />
-</LinearLayout>
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

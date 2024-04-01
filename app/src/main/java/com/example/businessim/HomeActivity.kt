@@ -8,6 +8,7 @@ import com.example.businessim.databinding.ActivityHomeBinding
 class HomeActivity : DrawerBaseActivity() {
     private lateinit var binding: ActivityHomeBinding
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)

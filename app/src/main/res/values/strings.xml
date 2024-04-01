@@ -3,4 +3,38 @@
     <string name="businessim">BUSINESSIM</string>
     <string name="menu_drawer_open">Drawer Open</string>
     <string name="menu_drawer_close">Drawer Close</string>
+    <string-array name="research_methods">
+        <item>In-House</item>
+        <item>Outsource</item>
+        <item>Coop</item>
+    </string-array>
+
+    <string-array name="quality_options">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="target_aud">
+        <item>Toddler</item>
+        <item>Teen</item>
+        <item>YoungAdult</item>
+        <item>Adult</item>
+        <item>Senior</item>
+    </string-array>
+    <string-array name="promo">
+        <item>Social Media ad</item>
+        <item>News ad</item>
+        <item>Email promo</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="round">
+        <item>Round 1</item>
+        <item>Round 2</item>
+        <item>Round 3</item>
+        <item>Round 4</item>
+        <item>5</item>
+    </string-array>
 </resources>
